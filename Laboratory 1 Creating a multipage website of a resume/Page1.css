@@ -1,0 +1,202 @@
+@media (max-width: 768px) {
+  section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #526998;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #1e3d7b;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+/* Profile picture */
+.profile {
+  display: flex;
+  justify-content: center;
+  margin-top: -60px;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.Information {
+  text-align: center;
+  margin: 20px auto;
+  font-size: 14px;
+  color: #444;
+}
+
+.Information a {
+  color: #1e3d7b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Information a:hover {
+  text-decoration: underline;
+}
+
+/* Section styling */
+section {
+  width: 80%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+}
+
+section h1 {
+  font-size: 20px;
+  color: #1e3d7b;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #1e3d7b;
+  padding-bottom: 5px;
+}
+
+section p, section ul {
+  font-size: 14px;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin: 6px 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+ul li::before {
+  content: "•";
+  color: #1e3d7b;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Skills Section */
+.Skills ul li {
+  margin: 12px 0;
+}
+
+.Skills ul li::before {
+  display: none;
+}
+
+.Skills ul li {
+  position: relative;
+  background: #eee;
+  border-radius: 5px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 13px;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+/* Progress bars*/
+.Skills ul li:nth-child(1)::after {
+  content: "Java - 30%";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  color: #fff;
+}
+.Skills ul li:nth-child(1) {
+  background: linear-gradient(to right, #1e3d7b 30%, #eee 30%);
+}
+
+.Skills ul li:nth-child(2)::after {
+  content: "Python - 30%";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  color: #fff;
+}
+.Skills ul li:nth-child(2) {
+  background: linear-gradient(to right, #1e3d7b 30%, #eee 30%);
+}
+
+.Skills ul li:nth-child(3)::after {
+  content: "HTML - 50%";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  color: #fff;
+}
+.Skills ul li:nth-child(3) {
+  background: linear-gradient(to right, #1e3d7b 50%, #eee 50%);
+}
+
+.Skills ul li:nth-child(4)::after {
+  content: "CSS - 30%";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  color: #fff;
+}
+.Skills ul li:nth-child(4) {
+  background: linear-gradient(to right, #1e3d7b 30%, #eee 30%);
+}
+
+.work, .education {
+  padding-bottom: 15px;
+}
+
+.work ul li, .education ul li {
+  padding-left: 0;
+}
+
+.work ul li::before, .education ul li::before {
+  display: none;
+}

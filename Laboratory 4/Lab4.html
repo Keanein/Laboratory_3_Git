@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vehicle Fleet Tracker</title>
+    <script src="Lab4.js"></script>
+</head>
+<body>
+    <h1>Vehicle Fleet Tracker</h1>
+    <div>
+        
+        <button onclick="showTotalMileage()">Show Total Mileage</button>
+        <button onclick="showFilteredVehicles()">Filter by Type:</button>
+            <select id="typeFilter">
+                <option value="Car">Car</option>
+                <option value="SUV">SUV</option>
+                <option value="Truck">Truck</option>
+            </select>
+        <button onclick="showMostEfficient()">Most Fuel Efficient</button>
+        <button onclick="showGroupedVehicles()">Group by Mileage</button>
+        <button onclick="fetchNewVehicles()">Fetch New Vehicles</button>
+    </div>
+    <pre id="output"></pre>
+</body>
+</html>
